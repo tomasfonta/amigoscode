@@ -15,6 +15,7 @@ public record NotificationController(NotificationService notificationService) {
     @PostMapping()
     public void createNotification(@RequestBody NotificationRequest notificationRequest) {
         log.info("Creating notification {}", notificationRequest);
+        
         notificationService.createNotification(notificationRequest);
     }
 

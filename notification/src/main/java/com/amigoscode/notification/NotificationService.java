@@ -16,7 +16,7 @@ public record NotificationService(NotificationRepository notificationRepository)
                 .toCustomerEmail(request.toCustomerEmail())
                 .message(request.message())
                 .sentAt(LocalDateTime.now())
-                .sender("Sender")
+                .sender("Amigoscode")
                 .build();
 
         notificationRepository.save(notification);
